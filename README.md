@@ -30,4 +30,10 @@
   2) 실행 권한 주기
      sudo chmod +x /usr/local/bin/docker-compose
   3) 다음 명령 실행시 버전 확인이 가능하면, 성공
-     docker-compose --version 
+     docker-compose --version
+
+
+docker 기본 개념
+ 1. docker : 컨테이너 기반의 가상화 플랫폼. 컨테이너 상에 서버를 셋업 함으로써, 언제든 해당 환경을 불러올 수 있다.
+ 2. docker image : docker 컨테이너를 생성하기 위한 명령들(스크립트의 모음). 스크립트들은 layer처럼 쌓여있다.
+ 3. docker container : docker image가 리눅스 컨테이너 형태로 실행한 상태(inxtance)를 의미
