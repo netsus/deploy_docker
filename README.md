@@ -36,4 +36,8 @@
 docker 기본 개념
  1. docker : 컨테이너 기반의 가상화 플랫폼. 컨테이너 상에 서버를 셋업 함으로써, 언제든 해당 환경을 불러올 수 있다.
  2. docker image : docker 컨테이너를 생성하기 위한 명령들(스크립트의 모음). 스크립트들은 layer처럼 쌓여있다.
+<<<<<<< HEAD
  3. docker container : docker image가 리눅스 컨테이너 형태로 실행한 상태(inxtance)를 의미
+=======
+ 3. docker container : docker image가 리눅스 컨테이너 형태로 실행한 상태(inxtance)를 의미.
+>>>>>>> 3df62301955496e9febecc10460fd63c0bc4e9bd
