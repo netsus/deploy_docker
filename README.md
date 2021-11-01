@@ -30,4 +30,4 @@
   2) 실행 권한 주기
      sudo chmod +x /usr/local/bin/docker-compose
   3) 다음 명령 실행시 버전 확인이 가능하면, 성공
-     docker-compose --version
+     docker-compose --version 
