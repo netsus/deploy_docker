@@ -52,4 +52,17 @@ docker pull
 1. docker pull [이미지 이름] : docker image 다운로드
     ex) docker pull ubuntu : ubuntu 최신버전 설치된다. -> docker pull ubuntu:20.04 하면 20.04버전 다운로드된다.
 
-   
+
+docker rmi 삭제할이미지이름 : 도커 이미지 삭제 명령
+ 1. docker rmi 이미지이름[:태그] or ImageID
+
+docker rm 삭제할컨테이너이름 : 도커 컨테이너 삭제
+
+docker create : 컨테이너 생성 명령어. return으로 컨테이너의 id를 출력한다.
+ 1. --name 옵션 사용 : docker create --name 내가원하는컨테이너이름 이미지이름
+   ex) docker create --name cwj ubuntu : cwj이름으로 ubuntu 이미지에대한 컨테이너 생성.
+
+docker ps : 현재 실행 중인 컨테이너 확인 (모든 컨테이너를 확인하려면 -a 옵션 사용)
+
+
+
