@@ -37,3 +37,19 @@ docker 기본 개념
  1. docker : 컨테이너 기반의 가상화 플랫폼. 컨테이너 상에 서버를 셋업 함으로써, 언제든 해당 환경을 불러올 수 있다.
  2. docker image : docker 컨테이너를 생성하기 위한 명령들(스크립트의 모음). 스크립트들은 layer처럼 쌓여있다.
  3. docker container : docker image가 리눅스 컨테이너 형태로 실행한 상태(inxtance)를 의미
+
+
+ docker search
+ 1. docker search --limit=5 [이미지 이름] : 이미지 이름 검색 결과에 대해 상위 5개만 보여줘라
+     ex) docker search --limit=5 ubuntu
+    1) 이미지이름 뒤에는 이미지이름[:태그] 형식으로 버전정보를 쓸 수 있다. (default는 :latest로 최신버전 설치됨)
+    --> 태그는 hub.docker.com 사이트에서 확인 가능.
+
+* docker image 확인 명령 : docker images   or  docker image ls 
+    -q 옵션: docker image의 id만 확인 가능. -> 다른 명령어와 함께 자주 쓰인다.
+
+docker pull
+1. docker pull [이미지 이름] : docker image 다운로드
+    ex) docker pull ubuntu : ubuntu 최신버전 설치된다. -> docker pull ubuntu:20.04 하면 20.04버전 다운로드된다.
+
+   
